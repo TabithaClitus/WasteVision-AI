@@ -118,6 +118,8 @@ Box mAP@50 evaluates bounding-box detection at an IoU threshold of 50%.
 
 Box mAP@50–95 evaluates bounding-box detection across IoU thresholds from 50% to 95%.
 
+SYSTEM ARCHITECTURE
+
 <img width="528" height="482" alt="image" src="https://github.com/user-attachments/assets/77b70d91-3c1f-42d0-9c7f-259ec51c6afa" />
 
 🛠️ Tech Stack
@@ -143,10 +145,15 @@ Google Colab for model training
 📂 Project Structure
 
 WasteVision-AI/
+
 │
+
 ├── app.py
+
 ├── best.pt
+
 ├── requirements.txt
+
 └── README.md
 
 File Description

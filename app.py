@@ -1,4 +1,3 @@
-%%writefile /content/wastevision_deploy/app.py
 
 import streamlit as st
 from ultralytics import YOLO

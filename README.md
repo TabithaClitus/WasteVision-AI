@@ -1,4 +1,4 @@
-                                                            ♻️ WasteVision AI
+                                                         ♻️ WasteVision AI
 
 Real-Time Waste Instance Segmentation & Smart Waste Analytics
 

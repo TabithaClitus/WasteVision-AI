@@ -211,7 +211,7 @@ st.markdown(dedent("""
     }
 
 </style>
-"""), unsafe_allow_html=True)
+""")
 
 # =========================================================
 # MODEL
@@ -308,7 +308,7 @@ with st.sidebar:
 # HERO
 # =========================================================
 
-st.markdown(dedent("""
+st.html("""
 <div class="hero">
 
     <div class="hero-title">
@@ -325,7 +325,7 @@ st.markdown(dedent("""
     </div>
 
 </div>
-"""), unsafe_allow_html=True)
+""")
 
 # =========================================================
 # TABS
@@ -373,7 +373,7 @@ with image_tab:
                 multiple objects appear in the same scene.
                 </p>
             </div>
-            """), unsafe_allow_html=True)
+            """)
 
         with col2:
             st.markdown(dedent("""
@@ -384,7 +384,7 @@ with image_tab:
                 of relying only on rectangular bounding boxes.
                 </p>
             </div>
-            """), unsafe_allow_html=True)
+            """)
 
         with col3:
             st.markdown(dedent("""
@@ -395,7 +395,7 @@ with image_tab:
                 and display confidence scores.
                 </p>
             </div>
-            """), unsafe_allow_html=True)
+            """)
 
     else:
 
@@ -636,7 +636,7 @@ with video_tab:
                 Upload MP4, AVI, MOV or MKV waste footage.
                 </p>
             </div>
-            """), unsafe_allow_html=True)
+            """)
 
         with col2:
             st.markdown(dedent("""
@@ -647,7 +647,7 @@ with video_tab:
                 YOLO11s segmentation model.
                 </p>
             </div>
-            """), unsafe_allow_html=True)
+            """)
 
         with col3:
             st.markdown(dedent("""
@@ -658,7 +658,7 @@ with video_tab:
                 detection events throughout the video.
                 </p>
             </div>
-            """), unsafe_allow_html=True)
+            """)
 
     else:
 
@@ -946,4 +946,4 @@ st.markdown(dedent("""
     YOLO11s Instance Segmentation &nbsp;•&nbsp;
     Smart Waste Analytics
 </div>
-"""), unsafe_allow_html=True)
+""")

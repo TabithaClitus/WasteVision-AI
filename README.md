@@ -202,35 +202,61 @@ imageio-ffmpeg
 Image Analysis
 
 Upload Image
+
      ↓
+     
 YOLO11s-seg
+
      ↓
+     
 Detect Waste Objects
+
      ↓
+     
 Generate Individual Masks
+
      ↓
+     
 Classify Objects
+
      ↓
+     
 Display Results
+
      ↓
+     
 Generate Analytics
 
 Video Analysis
 
 Upload Video
+
      ↓
+     
 Read Video Frames
+
      ↓
+     
 YOLO11s-seg Detection
+
      ↓
+     
 Generate Segmentation Masks
+
      ↓
+     
 Annotate Each Frame
+
      ↓
+     
 Encode as H.264 MP4
+
      ↓
+     
 Display Segmented Video
+
      ↓
+     
 Generate Waste Analytics
 
 📊 Analytics

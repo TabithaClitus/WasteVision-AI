@@ -6,6 +6,7 @@ import cv2
 import numpy as np
 import tempfile
 import os
+from textwrap import dedent
 
 # =========================================================
 # PAGE CONFIG
@@ -22,7 +23,7 @@ st.set_page_config(
 # CUSTOM CSS
 # =========================================================
 
-st.markdown("""
+st.markdown(dedent("""
 <style>
 
     /* ---------- GLOBAL ---------- */
@@ -210,7 +211,7 @@ st.markdown("""
     }
 
 </style>
-""", unsafe_allow_html=True)
+"""), unsafe_allow_html=True)
 
 # =========================================================
 # MODEL
@@ -307,7 +308,7 @@ with st.sidebar:
 # HERO
 # =========================================================
 
-st.markdown("""
+st.markdown(dedent("""
 <div class="hero">
 
     <div class="hero-title">
@@ -324,7 +325,7 @@ st.markdown("""
     </div>
 
 </div>
-""", unsafe_allow_html=True)
+"""), unsafe_allow_html=True)
 
 # =========================================================
 # TABS
@@ -364,7 +365,7 @@ with image_tab:
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            st.markdown("""
+            st.markdown(dedent("""
             <div class="info-card">
                 <h4>🎯 Instance Detection</h4>
                 <p>
@@ -372,10 +373,10 @@ with image_tab:
                 multiple objects appear in the same scene.
                 </p>
             </div>
-            """, unsafe_allow_html=True)
+            """), unsafe_allow_html=True)
 
         with col2:
-            st.markdown("""
+            st.markdown(dedent("""
             <div class="info-card">
                 <h4>✂️ Pixel Masks</h4>
                 <p>
@@ -383,10 +384,10 @@ with image_tab:
                 of relying only on rectangular bounding boxes.
                 </p>
             </div>
-            """, unsafe_allow_html=True)
+            """), unsafe_allow_html=True)
 
         with col3:
-            st.markdown("""
+            st.markdown(dedent("""
             <div class="info-card">
                 <h4>📊 Smart Analytics</h4>
                 <p>
@@ -394,7 +395,7 @@ with image_tab:
                 and display confidence scores.
                 </p>
             </div>
-            """, unsafe_allow_html=True)
+            """), unsafe_allow_html=True)
 
     else:
 
@@ -628,17 +629,17 @@ with video_tab:
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            st.markdown("""
+            st.markdown(dedent("""
             <div class="info-card">
                 <h4>🎥 Video Input</h4>
                 <p>
                 Upload MP4, AVI, MOV or MKV waste footage.
                 </p>
             </div>
-            """, unsafe_allow_html=True)
+            """), unsafe_allow_html=True)
 
         with col2:
-            st.markdown("""
+            st.markdown(dedent("""
             <div class="info-card">
                 <h4>⚡ Frame Analysis</h4>
                 <p>
@@ -646,10 +647,10 @@ with video_tab:
                 YOLO11s segmentation model.
                 </p>
             </div>
-            """, unsafe_allow_html=True)
+            """), unsafe_allow_html=True)
 
         with col3:
-            st.markdown("""
+            st.markdown(dedent("""
             <div class="info-card">
                 <h4>📊 Waste Events</h4>
                 <p>
@@ -657,7 +658,7 @@ with video_tab:
                 detection events throughout the video.
                 </p>
             </div>
-            """, unsafe_allow_html=True)
+            """), unsafe_allow_html=True)
 
     else:
 
@@ -939,10 +940,10 @@ with video_tab:
 # FOOTER
 # =========================================================
 
-st.markdown("""
+st.markdown(dedent("""
 <div class="footer">
     ♻️ WasteVision AI &nbsp;•&nbsp;
     YOLO11s Instance Segmentation &nbsp;•&nbsp;
     Smart Waste Analytics
 </div>
-""", unsafe_allow_html=True)
+"""), unsafe_allow_html=True)
